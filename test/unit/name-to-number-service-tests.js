@@ -1,4 +1,4 @@
-var nameToNumberService = require('../src/name-to-number-service');
+var nameToNumberService = require('../../src/name-to-number-service');
 var chai = require('chai');
 chai.should();
 

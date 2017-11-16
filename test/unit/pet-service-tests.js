@@ -1,6 +1,6 @@
-var petService = require('../src/pet-service');
+var petService = require('../../src/pet-service');
 var sinon = require('sinon');
-var httpClient = require('../src/http-client');
+var httpClient = require('../../src/http-client');
 
 describe('PetService', function() {
     describe('when retrieving pet details', function() {
