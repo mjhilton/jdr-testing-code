@@ -4,7 +4,7 @@ chai.should();
 
 describe("Name to number service", function() {
     describe("with 1 bucket", function() {
-        var getBucket = (name) => nameToNumberService.generateNumber(name, 10);
+        var getBucket = (name) => nameToNumberService.generateNumber(name, 1);
 
         it("puts Jenny in the first", function() {
             getBucket("Jenny").should.equal(1);

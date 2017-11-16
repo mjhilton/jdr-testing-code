@@ -13,7 +13,7 @@ const alphabet = ['a', 'b', 'c', 'd', 'e','f','g','h','i','j','k','l','m','n','o
 //
 // Therefore generateNumber('Aaron', 4) returns 1; generateNumber('Matt', 4) returns 3.
 function generateNumber(name, numberOfBuckets) {
-    assert.ok(numberOfBuckets < lettersInAlphabet, 'numberOfBuckets must be equal to or less than 26');
+    assert.ok(numberOfBuckets <= lettersInAlphabet, 'numberOfBuckets must be equal to or less than 26');
     assert.ok(typeof(name) === 'string', 'name must be a string');
     assert.ok(name.length > 0, 'name must have at least 1 letter');
 
