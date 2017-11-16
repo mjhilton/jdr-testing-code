@@ -1,13 +1,14 @@
 {
-    "author": "JuniorDev",
-    "name": "junior-dev-refactor-testing",
-    "version": "1.0.0",
-    "private": true,
-    "scripts": {
-        "test": "mocha"
-    },
-    "devDependencies": {
-        "chai": "^4.1.2",
-        "mocha": "^3.4.2"
-    }
+  "author": "JuniorDev",
+  "name": "junior-dev-refactor-testing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.4.2",
+    "sinon": "^4.1.2"
+  }
 }
