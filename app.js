@@ -15,3 +15,6 @@ routes(app);
 // Start the server
 app.listen(config.port);
 console.log("App listening on port " + config.port);
+
+// Make available as a node module
+module.exports = app;
