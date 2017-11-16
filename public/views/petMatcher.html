@@ -1,0 +1,29 @@
+<div class="card">
+    <h2>Your Ideal Match</h2>
+    <p>We'll find your ideal pet using just your name and favourite type of animal!</p>
+    <p>
+        <label for="ownerName">Your Name:</label> <input name="ownerName" ng-model="ownerName" type="text" placeholder="Enter your name" />
+    </p>
+    <p>
+        <label for="petType">Animal Type:</label> 
+        <select name="petType" ng-model="petType">
+            <option></option>
+            <option>Dog</option>
+            <option>Cat</option>
+            <option>Fish</option>
+        </select>
+    </p>
+    <p>
+        <button type="submit" class="jd-submit-button" ng-click="match()">Find my match</button>
+    </p>
+</div>
+<div ng-show="petName" class="card">
+    <h3 name="matchResult">Your perfect {{petType}} is a {{petName}}</h3>
+
+    <p ng-show="loading">Loading info about {{petName}}...</p>
+    <div ng-show="petInfo">
+        <p name="petInfo">{{petInfo}}</p>
+        <img name="petImage" src="{{petImageBase64}}" />
+        <p name="infoSource"><small>Source: <a href="{{petSourceUrl}}">{{petSourceUrl}}</a></small></p>
+    </p>
+</p>

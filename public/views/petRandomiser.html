@@ -1,0 +1,15 @@
+<div class="card">
+    <h2>Randomiser</h2>
+    <p>We'll find your perfect pet, completely at random!</p>
+    <button type="button" class="jd-submit-button" ng-click="randomise()">Find my match</button>
+</div>
+<div ng-show="petName" class="card">
+    <h3 name="matchResult">Your perfect pet is a <strong>{{petName}}</strong></h3>
+
+    <p ng-show="loading">Loading info about {{petName}}...</p>
+    <div name="petInfo" ng-show="petInfo">
+        <p>{{petInfo}}</p>
+        <img src="{{petImageBase64}}" />
+        <p name="infoSource"><small>Source: <a href="{{petSourceUrl}}">{{petSourceUrl}}</a></small></p>
+    </p>
+</div>

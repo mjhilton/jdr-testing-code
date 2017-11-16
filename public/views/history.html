@@ -1,0 +1,9 @@
+<div class="card">
+    <h2>Request History</h2>
+    <p>
+        <p ng-show="loading">Loading history...</p>
+        <ul name="history" ng-show="history">
+            <li ng-repeat="item in history">{{item.time|date:'short'}}: {{item.message}}</li>
+        </ul>
+    </p>
+</div>

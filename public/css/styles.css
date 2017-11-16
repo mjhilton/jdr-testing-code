@@ -1,0 +1,196 @@
+html {
+    min-height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    background: linear-gradient(140deg, #ffbf1e, #de1aff, #25f18d);
+    color: #313440;
+    border: 15px solid transparent;
+    -webkit-font-smoothing: antialiased;
+  }
+    
+  a {
+    text-decoration: none;
+    padding-bottom: 0.5px;
+    border-bottom: 0.5px dotted;
+  }
+  
+  h3 {
+    margin-top: 10px;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  pre {
+    white-space: pre-wrap;
+    font-size: 1.4rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .visuallyHidden {
+    opacity: 0;
+    top: 50px;
+  }
+
+  .card {
+      width: 600px;
+      background: white;
+      border-radius: 0.5em;
+      box-shadow: 0px 0px 2em rgba(0,0,0,.5);
+      padding: 1em;
+      margin-bottom: 1em;
+      transition: all .1s ease;      
+  }
+
+  .card a {
+      color: auto;
+  }
+
+  label {
+      width: 200px;
+      display: inline-block;
+  }
+  
+  .jd-submit-button {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 45px;
+    border: none;
+    padding: 0.5em;
+    transition: all .1s ease;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(49, 52, 64, 1);
+    cursor: pointer;
+  }
+
+  .jd-submit-button:hover {
+    transform: scale(1.05);
+  }
+
+  input, select {
+      width: 300px;
+      background: light-grey;
+      padding: 5px;
+      border: none;
+      border-bottom: 0.1em solid rgba(49, 52, 64, 1);
+      font-family: 'Rubik', sans-serif;
+      font-size: 1.2em;
+      -webkit-font-smoothing: antialiased;
+  }
+   
+  /*Gradient Background Animation*/
+  
+  @-webkit-keyframes GradientBackground {
+    0% {
+      background-position: 9% 0%
+    }
+    50% {
+      background-position: 92% 100%
+    }
+    100% {
+      background-position: 9% 0%
+    }
+  }
+  
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 9% 0%
+    }
+    50% {
+      background-position: 92% 100%
+    }
+    100% {
+      background-position: 9% 0%
+    }
+  }
+  
+  @-o-keyframes AnimationName {
+    0% {
+      background-position: 9% 0%
+    }
+    50% {
+      background-position: 92% 100%
+    }
+    100% {
+      background-position: 9% 0%
+    }
+  }
+  
+  @keyframes AnimationName {
+    0% {
+      background-position: 9% 0%
+    }
+    50% {
+      background-position: 92% 90%
+    }
+    80% {
+      background-position: 9% 9%
+    }
+  }
+  
+  
+  @keyframes nudge {
+  
+    0% {
+      transform: rotate(-7deg);
+    }
+  
+    33% {
+      transform: rotate(7deg);
+    }
+  
+    66% {
+      transform: rotate(-7deg);
+    }
+  }
+
+  .card img {
+      width: 100%;
+  }
+  
+  /*Responsive Design*/
+  @media screen and (max-width: 650px) {
+      .card {
+          width: auto;
+      }
+  }
+  
+  /* Portrait */
+  
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #jd-logo {
+      padding-left: 20px;
+      height: 1.7em;
+    }
+    body {
+      font-size: 26px;
+    }
+    .jd-block {
+      display: inline;
+    }
+    .jd-input-container {
+      position: inherit;
+    }
+    .jd-select-contents {
+      width: 100%;
+      text-align: center;
+    }
+    .jd-select-contents::before {
+      background: transparent;
+    }
+  }
+  
+  #mc_embed_signup_scroll{
+    font-size: 1rem;
+  }
+  
