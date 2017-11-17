@@ -42,6 +42,24 @@
                 "NODE_ENV": "test"
             },
             "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Automated UI Tests",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "-u",
+                "tdd",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test/automated-ui"
+            ],
+            "env": {
+                "NODE_ENV": "test"
+            },
+            "internalConsoleOptions": "openOnSessionStart"
         }
     ]
 }
